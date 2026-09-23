@@ -5,7 +5,7 @@ An agent skill may contain instructions, scripts and dependencies. A repository'
 The workflow starts with two bounded discovery lanes: established repositories ranked by stars and recently created repositories ranked by update. Search results remain candidates. The reviewer chooses a specific skill path at a full commit SHA and stages it in quarantine without executing its contents.
 
 ```mermaid
-flowchart LR
+flowchart TD
     Search[Public discovery] --> Candidate[Candidate]
     Candidate --> Pin[Pinned archive and file hashes]
     Pin --> Review[Instructions, rights and capability review]

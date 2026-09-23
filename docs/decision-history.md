@@ -5,7 +5,7 @@ A task reports success. A later check contradicts it. Replacing the success reco
 Consider a synthetic file check. A worker records that the fixture passed. A separate reviewer accepts the supplied evidence. A later complaint identifies an omitted check. The reviewer requests a correction, the worker supplies fresh checks and result receipts, and the reviewer records the corrected outcome. The original proposal remains available throughout.
 
 ```mermaid
-flowchart LR
+flowchart TD
     Proposal[Proposal] --> Checks[Receipt-backed checks]
     Checks --> Result[Recorded action and result]
     Result --> Review[Independent review]
